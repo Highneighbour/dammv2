@@ -1,0 +1,27 @@
+[package]
+name = "star-honorary-fee-position"
+version = "1.0.0"
+description = "Star Honorary Fee Position Module for DAMM v2 CP-AMM"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "star_honorary_fee_position"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+integration = []
+
+[dependencies]
+anchor-lang = "0.29.0"
+anchor-spl = "0.29.0"
+solana-program = "1.17.0"
+
+[dev-dependencies]
+tokio = { version = "1.32.0", features = ["full"] }
+solana-sdk = "1.17.0"
+solana-program-test = "1.17.0"
