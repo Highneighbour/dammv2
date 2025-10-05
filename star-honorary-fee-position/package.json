@@ -1,0 +1,43 @@
+{
+  "name": "star-honorary-fee-position",
+  "version": "1.0.0",
+  "description": "Star Honorary Fee Position Module for DAMM v2 CP-AMM",
+  "main": "index.js",
+  "scripts": {
+    "build": "anchor build",
+    "test": "anchor test",
+    "deploy": "./scripts/deploy-local.sh",
+    "setup-pool": "ts-node scripts/setup-pool.ts",
+    "test-crank": "ts-node scripts/test-crank.ts",
+    "lint": "cargo clippy --all-targets --all-features",
+    "format": "cargo fmt --all"
+  },
+  "keywords": [
+    "solana",
+    "anchor",
+    "defi",
+    "amm",
+    "liquidity",
+    "raydium",
+    "cp-amm"
+  ],
+  "author": "Star Team",
+  "license": "MIT",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "@solana/spl-token": "^0.3.9",
+    "@solana/web3.js": "^1.87.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.0",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

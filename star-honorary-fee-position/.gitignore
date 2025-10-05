@@ -1,0 +1,36 @@
+# Build artifacts
+target/
+test-ledger/
+.anchor/
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDL
+*.json
+!tsconfig.json
+!package.json
+
+# Keys
+*.keypair
+*.key
+id.json
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Rust
+**/*.rs.bk
+Cargo.lock
